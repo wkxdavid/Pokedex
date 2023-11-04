@@ -1,0 +1,264 @@
+.search-bar {
+    padding: 11px;
+    font-family: inherit;
+    border: 1px solid black;
+}
+
+/* Positions the search button on the same pixel as the text input and random button */
+.search-icon {
+    width: 40px;
+    background-color: #f15050;
+    top: 16.5px;
+    right: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.search-icon img {
+    width: 40px;
+    position: relative;
+    right: 7.5px;
+    bottom: 3px;
+}
+
+.pokedex-form {
+    margin-bottom: 3rem;
+}
+
+.pokedex-credits {
+    background-color: rgba(255, 255, 255, 0.55);
+    line-height: 2;
+}
+
+.search-bar, .random-btn {
+    width: 200px;
+}
+
+.pokedex-credits, .number {
+    margin-top: 0px;
+}
+
+.pokedex-credits, .search-and-surprise {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pokedex-credits, .drop-tab, .hide img, .closer img, .load-btn {
+    width: 100%;
+}
+
+.search-bar, .search-icon, .random-btn, .drop-tab, .hide img, .closer img {
+    height: 40px
+}
+
+.pokedex-form, .pokemon-cards {
+    margin-top: 3rem;
+}
+
+.pokedex-form, .name, .load, .filter-position, .pokedex-credits, .filter-position-icon {
+    text-align: center;
+}
+
+.search-icon, .random-btn, .random-btn img, .number, .filter-position,
+.filter-position-icon {
+    position: relative;
+}
+
+.search-icon:hover {
+    background-color: #a04848;
+}
+
+.pokemon-card {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.pokemon-card , .search-and-surprise {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pokemon-text {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pokemon-img img {
+    height: 250px;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 6px solid #62bd5a;
+    background-color: rgba(224, 225, 221, .8);
+}
+
+ /* Learnt animations thanks to this code: https://codepen.io/Digitango/pen/YQQBXR
+   Understood how animations can be made in CSS using "keyframes" where the percentage
+   of the animation complete is marked with structure of the animation. */
+a.card:hover {
+    animation: glow 3s infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Position the shuffle icon in the random button to be centered with the text */
+.random-btn img {
+    height: 20px;
+    margin-left: 15px;
+    top: 2px;
+}
+
+.filter-position-icon img, .random-btn img {
+    width: 25px;
+}
+
+.filter-position a {
+    text-decoration: none;
+}
+
+.filter-position a:hover {
+    border-bottom: white 2px solid;
+}
+
+.drop-tab, .hide img, .closer img {
+    opacity: 55%;
+}
+
+.random-btn p {
+    display: inline-block;
+}
+
+.filter-position-icon img {
+    height: 25px;
+}
+
+.type-icon img {
+    height: 70px;
+    width: 70px;
+    margin-right: 30px;
+    margin-left: 39px;
+}
+
+.search-and-surprise label {
+    font-size: 16px;
+    display: block;
+}
+
+/* Positions the random button to be on the same pixel as the text input and search button */
+.random-btn {
+    font-size: 10px;
+    margin-left: 0px;
+    bottom: 1.5px;
+}
+
+.random-btn, .load-btn {
+    font-family: inherit;
+    background-color: #2fa7d7;
+    border: 2px solid white;
+}
+
+.random-btn, .load-btn, .filter-position a {
+    color: white;
+    cursor: pointer;
+}
+
+.load-btn {
+    margin-bottom: 30px;
+}
+
+.random-btn:hover, .load-btn:hover {
+    background-color: #4692c4;
+}
+
+.pokemon-cards, .type, .type-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.pokemon-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.load-btn, .number {
+    font-size: 20px;
+}
+
+/* Styles and positions the pokedex number on the top left corner of the pokemon card */
+.number {
+    font-weight: 900;
+    color: #415A77;
+    bottom: 248px;
+    left: 6px;
+    margin: 0px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.filter-position, .type {
+    display: none;
+}
+
+/* Positions the advanced filter link to sit on the drop down image on the page */
+.filter-position, .filter-position-icon {
+    bottom: 26px;
+}
+
+.random-btn {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px)
+{
+    .search-bar {
+        width: 30%;
+    }
+
+    .type img {
+        height: 38px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .load-btn {
+        padding: 5px;
+        width: 400px;
+        height: 50px;
+    }
+
+    .pokemon-img img {
+        height: 300px;
+        width: 300px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 18px;
+    }
+
+    .number {
+        bottom: 300px;
+        left: 0px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    
+    .filter-position-icon, .type-icon {
+        display: none;
+    }
+
+    .filter-position, .type {
+        display: block;
+    }
+}

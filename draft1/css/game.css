@@ -1,0 +1,90 @@
+div > .game-pokepic, .game-correctpokepic {
+  display: block;
+}
+
+.game-pokemon-pic, div > .game-pokepic, .game-correctpokepic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div > .game-pokepic {
+  filter: brightness(0);
+}
+
+div > .game-correctpokepic {
+  padding-top: 15px;
+  filter: brightness(1);
+}
+
+.game-h1 {
+  margin-bottom: 25px;
+}
+
+.game-card {
+  border: 3px outset white;
+  border-radius: 15px;
+}
+
+.game-guess1, .game-h1, .game-card .game-name {
+  text-align: center;
+}
+
+.game-name {
+  margin-bottom: 10px;
+}
+
+.game-button {
+  background-color: white;
+}
+
+.game-pokemon-pic {
+  border: 4px solid white;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.game-guess1 {
+  font-size: 12pt;
+  margin: auto auto;
+  width: 70%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.game-guess1 .game-guess2 {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.game-form > input[type=text] {
+  width: 30%;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 598px)
+{
+    .game-pokemon-pic, div > .game-correctpokepic, .game-pokepic {
+      border: 0;
+      height: 150px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .game-form > input[type=text] {
+      width: 30%;
+    }
+
+    div > .game-correctpokepic, .game-pokepic {
+      height: 300px;
+      width: 300px;
+    }
+    .game-pokemon-pic {
+      border: 4px solid white;
+    }
+}

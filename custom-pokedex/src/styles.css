@@ -1,0 +1,1400 @@
+* {
+  box-sizing: border-box;
+}
+/* This is the css for the pokedex page */
+.search-bar {
+  padding: 11px;
+  font-family: inherit;
+  border: 1px solid black;
+}
+
+.region-checkbox form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-filter {
+  width: 85%;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loading img {
+  width: 100px;
+}
+
+.menu span {
+  color: white;
+  position: relative;
+  top: 6px;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.pokedex-form {
+  margin-bottom: 3rem;
+}
+
+.pokedex-credits {
+  background-color: rgba(255, 255, 255, 0.55);
+  line-height: 2;
+}
+
+.search-bar, .random-btn {
+  width: 200px;
+}
+
+.pokedex-credits, .number {
+  margin-top: 0px;
+}
+
+.pokedex-credits, .search-and-surprise {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pokedex-credits, .drop-tab, .hidden img, .closer img, .load-btn {
+  width: 100%;
+}
+
+.search-bar, .search-icon, .random-btn, .drop-tab, .hidden img, .closer img {
+  height: 40px
+}
+
+.pokedex-form, .pokemon-cards {
+  margin-top: 3rem;
+}
+
+.pokedex-form, .name, .load, .filter-position, .pokedex-credits, .filter-position-icon {
+  text-align: center;
+}
+
+.search-icon, .random-btn, .random-btn img, .number, .filter-position,
+.filter-position-icon {
+  position: relative;
+}
+
+.search-icon:hover {
+  background-color: #a04848;
+}
+
+.pokemon-card {
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.pokemon-card , .search-and-surprise, .menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pokemon-text {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pokemon-img img {
+  height: 250px;
+  width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: rgba(224, 225, 221, .8);
+}
+
+.grass-border {
+  border: 6px solid #63bc5a;
+}
+
+.fire-border {
+  border: 6px solid #ff9d55;
+}
+
+.water-border {
+  border: 6px solid #5090d6;
+}
+
+.poison-border {
+  border: 6px solid #aa6bc8;
+}
+
+.electric-border {
+  border: 6px solid #f4d23c;
+}
+
+.bug-border {
+  border: 6px solid #91c12f;
+}
+
+.normal-border {
+  border: 6px solid #929da3;
+}
+
+.flying-border {
+  border: 6px solid #8fa9de;
+}
+
+.fairy-border {
+  border: 6px solid #ec8fe6;
+}
+
+.ground-border {
+  border: 6px solid #d97845;
+}
+
+.fighting-border {
+  border: 6px solid #ce416b;
+}
+
+.psychic-border {
+  border: 6px solid #fa7179;
+}
+
+.rock-border {
+  border: 6px solid #c5b78c;
+}
+
+.ice-border {
+  border: 6px solid #73cec0;
+}
+
+.dark-border {
+  border: 6px solid #5a5465;
+}
+
+.dragon-border {
+  border: 6px solid #0b6dc3;
+}
+
+.steel-border {
+  border: 6px solid #5a8ea2;
+}
+
+.ghost-border {
+  border: 6px solid #5269ad;
+}
+
+/* Learnt animations thanks to this code: https://codepen.io/Digitango/pen/YQQBXR
+Understood how animations can be made in CSS using "keyframes" where the percentage
+of the animation complete is marked with structure of the animation. */
+a.card:hover {
+  animation: glow 3s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes glow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Position the shuffle icon in the random button to be centered with the text */
+.random-btn img {
+  height: 20px;
+  margin-left: 15px;
+  top: 2px;
+}
+
+.filter-position-icon img, .random-btn img {
+  width: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.hidden {
+  cursor: pointer;
+}
+
+.filter-position a:hover {
+  border-bottom: white 2px solid;
+}
+
+.drop-tab, .hidden img, .closer img {
+  opacity: 55%;
+}
+
+.random-btn p {
+  display: inline-block;
+}
+
+.filter-position-icon img {
+  height: 25px;
+}
+
+.type-icon img {
+  height: 70px;
+  width: 70px;
+  margin-right: 30px;
+  margin-left: 39px;
+  margin-bottom: 10px;
+}
+
+.search-and-surprise label {
+  font-size: 16px;
+  display: block;
+}
+
+/* Positions the random button to be on the same pixel as the text input and search button */
+.random-btn {
+  font-size: 10px;
+  margin-left: 0px;
+  bottom: 8px;
+  left: 16px;
+}
+
+.random-btn, .load-btn {
+  font-family: inherit;
+  background-color: #2fa7d7;
+  border: 2px solid white;
+}
+
+.random-btn, .load-btn, .filter-position a {
+  color: white;
+  cursor: pointer;
+}
+
+.load-btn {
+  margin-bottom: 30px;
+}
+
+.random-btn:hover, .load-btn:hover {
+  background-color: #4692c4;
+}
+
+.pokemon-cards, .type, .type-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.pokemon-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.load-btn, .number {
+  font-size: 20px;
+}
+
+/* Styles and positions the pokedex number on the top left corner of the pokemon card */
+.number {
+  font-weight: 900;
+  color: #415A77;
+  bottom: 248px;
+  left: 6px;
+  margin: 0px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.filter-position, .type {
+  display: none;
+}
+
+/* Positions the advanced filter link to sit on the drop down image on the page */
+.filter-position, .filter-position-icon {
+  bottom: 26px;
+}
+
+.random-btn {
+  margin-top: 10px;
+}
+
+
+.filters input[type=checkbox] {
+  display: none;
+}
+
+/* This is the CSS for the game page */
+div > .game-pokepic, .game-correctpokepic {
+  display: block;
+}
+
+.game-pokemon-pic, div > .game-pokepic, .game-correctpokepic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div > .game-pokepic {
+  filter: brightness(0);
+}
+
+div > .game-correctpokepic {
+  padding-top: 15px;
+  filter: brightness(1);
+}
+
+.game-h1 {
+  margin-bottom: 15px;
+  margin-top: 17px;
+}
+
+.game-card {
+  border: 3px outset white;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.game-guess, .game-h1, .game-card .game-name {
+  text-align: center;
+  margin-top: 9px;
+}
+
+.game-name {
+  margin-bottom: 10px;
+}
+
+.game-button {
+  background-color: white;
+  opacity: 0.80;
+}
+
+.game-pokemon-pic {
+  border: 4px solid white;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.game-hide {
+  text-align: center;
+}
+
+.game-guess {
+  font-size: 12pt;
+  margin: auto auto;
+  width: 70%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.game-guess .game-guessinput {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.game-form > input[type=text] {
+  width: 275px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* This is the general CSS rules */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../public/img/background.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+footer {
+  font-size: 10px
+}
+
+nav, header {
+  text-transform: uppercase;
+}
+
+nav {
+  font-size: 2rem;
+  text-align: right;
+  color: white;
+}
+
+.poke-icon {
+  width: 70px;
+}
+
+.icon button {
+  border: none;
+}
+
+.words-icon {
+  display: none;
+}
+
+/* This is the CSS for the shop */
+.shop-search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.shop-player-coins {
+  display: flex;
+  justify-content: left;
+  color: black;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.shop-player-amount {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.user-message-shop-feedback {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.shop-search-bar input, .shop-search-bar select {
+  width: 60%;
+  height: 40px;
+  margin: 10px;
+}
+
+.shop-item-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.toggle-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.shop-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 20px;
+  margin: 4rem;
+  width: 90%;
+}
+
+body .shop-article {
+  padding: 8px;
+  color: black;
+  border: 6px solid #62bd5a;
+  background-color: rgba(224, 225, 221, .8);
+  padding-bottom: 20px;
+  margin: 15px;
+}
+
+.shop-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.shop-article img {
+  align-self: center;
+}
+
+.shop-choice {
+  width: 20rem;
+  height: 20rem;
+}
+
+.shop-article > p {
+  word-wrap: break-word;
+}
+
+.shop-coin {
+  width: 2rem;
+  height: 2rem;
+}
+
+.shop-price {
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.shop-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: rgba(238, 130, 238, 0.497);
+  width: 70%;
+  height: 50px;
+  font-family: 'Press Start 2P', sans-serif;
+  border-color: white;
+
+}
+
+/* This is the CSS for the filters on the pokedex */
+.type-btn {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-size: 32px;
+}
+
+.type-btn, .type-filter, .ability-filter,
+.generation-filter {
+  margin-left: 5px;
+}
+
+.type-btn, .generation-filter {
+  margin-bottom: 5px;
+}
+
+/* Makes the label a pokemon type image that acts as a checkbox */
+.normal {
+  background-image: url('../public/img/sml-normal.png');
+}
+
+.poison {
+  background-image: url('../public/img/sml-poison.png');
+}
+
+.bug {
+  background-image: url('../public/img/sml-bug.png');
+}
+
+.fire {
+  background-image: url('../public/img/sml-fire.png');
+}
+
+.electric {
+  background-image: url('../public/img/sml-electric.png');
+}
+
+.dragon {
+  background-image: url('../public/img/sml-dragon.png');
+}
+
+.fighting {
+  background-image: url('../public/img/sml-fighting.png');
+}
+
+.ground {
+  background-image: url('../public/img/sml-ground.png');
+}
+
+.ghost {
+  background-image: url('../public/img/sml-ghost.png');
+}
+
+.water {
+  background-image: url('../public/img/sml-water.png');
+}
+
+.psychic {
+  background-image: url('../public/img/sml-psychic.png');
+}
+
+.dark {
+  background-image: url('../public/img/sml-dark.png');
+}
+
+.flying {
+  background-image: url('../public/img/sml-flying.png');
+}
+
+.rock {
+  background-image: url('../public/img/sml-rock.png');
+}
+
+.steel {
+  background-image: url('../public/img/sml-steel.png');
+}
+
+.grass {
+  background-image: url('../public/img/sml-grass.png');
+}
+
+.ice {
+  background-image: url('../public/img/sml-ice.png');
+}
+
+.fairy {
+  background-image: url('../public/img/sml-fairy.png');
+}
+
+.region, .reset-btn, .load-btn, .pokedex-form label, .filter-position p {
+  text-transform: uppercase;
+}
+
+.region, .reset-btn {
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.type-filter p, .ability-filter p, .generation-filter p {
+  font-size: 20px;
+}
+
+.region {
+  display: inline-block;
+}
+
+.region, .reset-btn {
+  width: 70px;
+  height: 24px;
+  padding: 10px;
+  font-size: 8px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.type-btn, .region, .reset-btn {
+  cursor: pointer;
+}
+
+/* Makes the pokemon type checkboxes darken when checked */
+.type-checkbox input[type="checkbox"]:checked + label {
+  filter: brightness(50%);
+}
+
+/* Makes the region checkboxes invert colors when checked */
+.region-checkbox [type="checkbox"]:checked + label {
+  filter: invert(1);
+}
+
+.filter-options, .filter-buttons, .sign-in {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.type-filter, .ability-filter, .generation-filter {
+  margin-right: 20px;
+}
+
+.generation-filter {
+  margin-top: 0px;
+}
+
+.ability-filter, .generation-filter {
+  width: 93%;
+}
+
+.filter-buttons {
+  text-align: center;
+}
+
+.reset-btn, .submit-btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.filters, .type-checkbox, .region-checkbox, .filter-options, .right-side {
+  display: flex;
+}
+
+.filters, .right-side {
+  flex-direction: column;
+}
+
+.filter-options, .type-checkbox, .region-checkbox  {
+  flex-direction: row;
+}
+
+.type-checkbox, .region-checkbox {
+  flex-wrap: wrap;
+}
+
+.ability, .reset-btn, .submit-btn {
+  font-family: inherit;
+}
+
+.filter-buttons {
+  text-align: right;
+}
+
+.reset-btn:hover {
+  background-color: #4692c4;
+}
+
+.reset-btn{
+  background-color: #2fa7d7;
+}
+
+.ability, .filter-buttons {
+  width: 100%;
+}
+
+.ability {
+  height: 30px;
+}
+
+/*Everything below this alters stats.html*/
+
+.stats-img-content {
+display: flex;
+direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.creature, .chart {
+height: 100%;
+width: 100%;
+}
+
+div.neighbor-left > a, div.neighbor-right, a {
+display: flex;
+justify-content: center;
+}
+
+/* Used for styling the upper portions of the page, such as the name and the neighbor
+pokemon.*/
+.name {
+display: flex;
+justify-content: center;
+}
+
+.name h1 {
+margin-top: 5%;
+margin-bottom: 5%;
+margin-right: 1%;
+margin-left: 1%;
+font-size: 20px;
+text-align: center;
+}
+
+.name > h2 {
+font-size: 100%;
+}
+
+.neighbor-left a {
+display: flex;
+}
+
+.neighbor-right a {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.neighbor-left a > img, .neighbor-right a > img {
+height: 50px;
+width: 50px;
+}
+
+.neighbor-left, .neighbor-right {
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 25px;
+border: 6px solid #62bd5a;
+background-color: rgba(224, 225, 221, .8);
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.neighbor-left a:hover {
+animation: slide-left 1s infinite;
+animation-timing-function: linear;
+}
+
+/* Learnt animations thanks to this code: https://codepen.io/Digitango/pen/YQQBXR
+Understood how animations can be made in CSS using "keyframes" where the percentage
+of the animation complete is marked with structure of the animation. */
+@keyframes slide-left {
+0% { transform: translate(2px, 0); }
+50% { transform: translate(-10px, 0); }
+100% { transform: translate(0.5px, 0); }
+}
+
+.neighbor-right a:hover {
+animation: slide-right 1s infinite;
+animation-timing-function: linear;
+}
+
+/* Learnt animations thanks to this code: https://codepen.io/Digitango/pen/YQQBXR
+Understood how animations can be made in CSS using "keyframes" where the percentage
+of the animation complete is marked with structure of the animation. */
+@keyframes slide-right {
+0% { transform: translate(2px, 0); }
+50% { transform: translate(10px, 0); }
+100% { transform: translate(0.5px, 0); }
+}
+
+.back-and-forward {
+display: flex;
+flex-direction: column;
+
+}
+
+.physicals {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+background-color: 	rgb(115, 147, 179, 00.5);
+width: 100%;
+height: 500px;
+justify-content: center;
+padding: 10px;
+border-radius: 5%;
+margin: 10px;
+}
+.physical-stat {
+display: flex;
+flex-direction: column;
+width: 50%;
+height: 10vh;
+margin: 0px;
+text-align: center;
+}
+
+h3 .data {
+color: black;
+}
+
+.chart-container {
+justify-content: center;
+}
+
+.chart {
+border-radius: 30px;
+width: 100%;
+justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width: 320px) {
+.shop-item-grid {
+  margin-bottom: 0;
+}
+
+h2.right-neighbor-name, h2.left-neighbor-name, h2.number-neighbor, h2.number-neighbor {
+  font-size: 50%;
+}
+
+.game-pokemon-pic, div > .game-correctpokepic, .game-pokepic {
+  border: 0;
+  height: auto;
+}
+
+div > .game-correctpokepic, .game-pokepic {
+  height: 150px;
+  width: auto;
+}
+
+.game-pokemon-pic {
+  display:contents;
+}
+
+.game-form > input[type=text] {
+  width: 170px;
+}
+
+.shop-choice{
+  width: auto;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-article {
+  display: block;
+  width: 100%;
+}
+
+.shop-background {
+  width: 100%;
+  margin: auto;
+}
+
+.shop-article > p {
+  text-align: center;
+}
+
+.shop-button {
+  width: 70%;
+}
+
+.search-bar {
+  font-size: 25px;
+}
+
+nav {
+  font-size: 20px;
+}
+}
+
+@media (min-width: 598px) {
+
+  footer {
+      font-size: 12px
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+  .game-pokemon-pic, div > .game-correctpokepic, .game-pokepic {
+    border: 0;
+    height: auto;
+    margin: 0;
+  }
+
+  .menu span {
+    top: 10px;
+    font-size: 25px;
+  }
+
+  .poke-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .type-filter {
+    width: 80%;
+  }
+
+  .region {
+    font-size: 8px;
+  }
+
+  .ability-filter, .generation-filter {
+    width: 90%;
+  }
+  .game-form > input[type=text] {
+    width: 275px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .type img {
+      height: 38px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+
+  .load-btn {
+      padding: 5px;
+      width: 400px;
+      height: 50px;
+  }
+
+  .pokemon-img img {
+      height: 300px;
+      width: 300px;
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-top: 18px;
+  }
+
+  .number {
+      bottom: 300px;
+      left: 0px;
+  }
+
+  .type-btn {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-size: 48px;
+    margin-right: 8px;
+  }
+
+  .region, .reset-btn {
+      width: 120px;
+      height: 35px;
+      font-size: 14px;
+  }
+
+  .type-filter {
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+
+  .generation-filter {
+      margin-top: 100px;
+  }
+
+  .ability-filter, .generation-filter {
+      width: 85%;
+  }
+
+  .type-filter {
+    width: 70%;
+  }
+
+  /* Styles and gives the ability dropdown a scroll bar */
+  .ability {
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 50px;
+  }
+
+  .reset-btn {
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  .reset-btn {
+    margin: 20px;
+  }
+
+  .ability, .filter-buttons {
+    width: 100%;
+  }
+
+  footer {
+      font-size: 14px
+  }
+
+  .shop-item-grid {
+    margin-bottom: 0;
+  }
+
+  .shop-choice{
+    width: auto;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shop-article {
+    width: 80%;
+  }
+
+  .shop-article > p {
+    text-align: center;
+  }
+
+  .search-bar {
+    font-size: 25px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  div > .game-correctpokepic, .game-pokepic {
+    height: 300px;
+    width: 300px;
+  }
+
+  .game-pokemon-pic {
+    border: 4px solid rgb(255, 255, 255);
+    display: block;
+  }
+
+  .game-pokemon-pic, div > .game-pokepic, .game-correctpokepic {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Everything below this alters stats.html*/
+  .creature {
+    width: 500px;
+    height: 100%;
+  }
+
+  .physicals {
+      width: 500px;
+  }
+
+  .back-and-forward {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .name > h2 {
+      font-size: 100%;
+  }
+
+  .name h1 {
+      font-size: 42px;
+  }
+
+  .neighbor-left, .neighbor-right {
+      width: 60%;
+  }
+
+  .menu span {
+    font-size: 30px;
+  }
+
+  .poke-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .search-bar {
+    width: 50%;
+  }
+
+  .filter-position-icon, .type-icon {
+      display: none;
+  }
+
+  .filter-position, .type {
+      display: block;
+  }
+
+  /* Makes the pokemon type checkbox into a larger icon with words */
+  .normal {
+    background-image: url('../public/img/normal.png');
+  }
+
+  .poison {
+    background-image: url('../public/img/poison.png');
+  }
+
+  .bug {
+    background-image: url('../public/img/bug.png');
+  }
+
+  .fire {
+    background-image: url('../public/img/fire.png');
+  }
+
+  .electric {
+    background-image: url('../public/img/electric.png');
+  }
+
+  .dragon {
+    background-image: url('../public/img/dragon.png');
+  }
+
+  .fighting {
+    background-image: url('../public/img/fighting.png');
+  }
+
+  .ground {
+    background-image: url('../public/img/ground.png');
+  }
+
+  .ghost {
+    background-image: url('../public/img/ghost.png');
+  }
+
+  .water {
+    background-image: url('../public/img/water.png');
+  }
+
+  .psychic {
+    background-image: url('../public/img/psychic.png');
+  }
+
+  .dark {
+    background-image: url('../public/img/dark.png');
+  }
+
+  .flying {
+    background-image: url('../public/img/flying.png');
+  }
+
+  .rock {
+    background-image: url('../public/img/rock.png');
+  }
+
+  .steel {
+    background-image: url('../public/img/steel.png');
+  }
+
+  .grass {
+    background-image: url('../public/img/grass.png');
+  }
+
+  .ice {
+    background-image: url('../public/img/ice.png');
+  }
+
+  .fairy {
+    background-image: url('../public/img/fairy.png');
+  }
+
+  .type-btn {
+    width: 120px;
+    height: 33px;
+    background-size: 120px;
+  }
+
+  .region, .type-btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .type-filter p, .ability-filter p, .generation-filter p {
+    font-size: 26px;
+  }
+
+  .type-filter {
+    width: 100%;
+  }
+
+  .ability-filter, .generation-filter {
+    width: 80%;
+  }
+
+  nav a {
+      text-decoration: none;
+      margin-right: 1rem;
+  }
+
+  footer {
+      font-size: 16px
+  }
+
+  .icon {
+      display: none;
+  }
+
+  .words-icon {
+      display: block;
+  }
+
+  .shop-article {
+    width: 300px;
+  }
+
+  .shop-choice {
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pokedex {
+    font-size: 35px;
+  }
+
+  .nav-item {
+    font-size: 25px;
+  }
+
+  .pokedex, .nav-item {
+    color: white;
+  }
+
+  .nav-item:hover, .pokedex:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  }
+}
+
+.type-checkbox form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+
+  .search-bar {
+    width: 40%;
+  }
+
+  .shop-article {
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .shop-choice {
+    width: 70%;
+  }
+
+  .type-btn {
+      background-size: 140px;
+  }
+
+  .type-btn, .region, .reset-btn, .submit-btn  {
+      width: 140px;
+      height: 38px;
+      font-size: 18px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .pokedex {
+    font-size: 45px;
+  }
+
+  .nav-item {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+
+    .search-bar {
+      width: 30%;
+    }
+
+    .type-btn {
+        background-size: 200px;
+    }
+
+    .type-btn, .region, .reset-btn, .submit-btn  {
+        width: 200px;
+        height: 54px;
+        font-size: 26 px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+
+    .pokedex {
+      font-size: 60px;
+    }
+
+    .nav-item {
+      font-size: 35px;
+    }
+}

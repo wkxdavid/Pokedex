@@ -1,0 +1,26 @@
+header {
+  font-size: 40px;
+  text-align: center;
+}
+
+body {
+  background-image: url('../img/pokedex.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+header, section, footer {
+  background-color: rgba(241, 235, 224, 0.8);
+  border-radius: 20px;
+}
+
+section, footer {
+  padding: 10px;
+}

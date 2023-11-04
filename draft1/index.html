@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="Group 3" content="David Pham, Harman Zhang, Diana Tran, Teerth Mehta">
+      <meta name="description" content="INFO 340 pokedex project. Contains an interactive Pokedex and
+      links to a pokemon quiz and a shop.">
+      <title>Pokedex</title>
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/pokedex.css">
+      <link rel="icon" type="image/png" href="img/pokedex-icon.png">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+
+        <div class="words-icon">
+          <a href="game.html">Quiz<img src="img/quiz.png" alt="quiz icon"></a>
+          <a href="shop.html">Shop<img src="img/shop.png" alt="cart icon"></a>
+        </div>
+        <div class="icon">
+          <button aria-label="nav-menu-button" class="menu-btn" type="button"><img src="img/menu.png" alt="menu icon"></button>
+        </div>
+  
+      </nav>
+  
+      <h1>Pok&eacute;dex</h1>
+    </header>
+    <hr>
+
+    <main>
+
+      <section class="search-and-surprise">
+        <form class="pokedex-form">
+          <label for="pokename">Search by name or pok&eacute;dex number</label>
+          <input aria-label="search-bar" class="search-bar" type="text" id="pokename" name="pokename" required>
+          <button aria-label="search-button" class="search-icon" type="button"><img src="img/search.png" alt="search icon"></button>
+          <button aria-label="randomizer button" class="random-btn" type="button"><p>Surprise me!</p><img src="img/surprise.png" alt="shuffle icon"></button>
+        </form>
+      </section>
+
+      <section class="filters">
+        <img class="drop-tab" src="img/filter.png" alt="drop down tab">
+        <div class="filter-position">
+          <a aria-label="show-filters-button" href="pokedex-with-filters.html">Show Advanced Search</a>
+        </div>
+        <div class="filter-position-icon">
+          <a aria-label="show-filters-icon-button" href="pokedex-with-filters.html"><img src="img/down.png"></a>
+        </div>
+      </section>
+
+      <section id="dex" class="pokemon-cards">
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="stats.html">
+          <div class="pokemon-card">
+            <div class="pokemon-img">
+              <img src="img/0001.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-text">
+              <p class="number">#0001</p>
+              <p class="name">Bulbasaur</p>
+            </div>
+            <div class="type">
+              <img src="img/grass.png" alt="grass type symbol">
+              <img src="img/poison.png" alt="poison type symbol">
+            </div>
+            <div class="type-icon">
+              <img src="img/sml-grass.png" alt="grass type symbol">
+              <img src="img/sml-poison.png" alt="poison type symbol">
+            </div>
+          </div>
+        </a>
+
+      </section>
+      
+      <section class="load">
+        <button aria-label="load-more-button" class="load-btn" type="button">Load more pokemon</button>
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="closer">
+        <img src="img/closer.png" alt="up tab">
+      </div>
+      <p class="pokedex-credits">
+        This pok&eacute;dex was created by INFO340 Group 3. This group includes David Pham,
+        Harman Zhang, Diana Tran, and Teerth Mehta. Portions of this page created using
+        <cite><a href="https://pokeapi.co/">Pok&eacute;API</a></cite> resources. Credit given to Paul
+        Hallett and other Pok&eacute;API contributors around the world. Background image credits
+        go to <cite><a href="https://wallpaperaccess.com/pokemon-landscape">WallpaperAccess</a>.</cite>
+        &copy; 2023, Nintendo.
+      </p>
+
+    </footer>
+
+  </body>
+
+</html>
